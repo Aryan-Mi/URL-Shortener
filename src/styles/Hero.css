@@ -1,0 +1,54 @@
+.hero {
+  display: grid;
+}
+
+.hero nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem 0;
+}
+
+.logo {
+  width: 6.5rem;
+}
+
+.menu {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--clr-neut-gray-violet);
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.hero-description {
+  color: var(--clr-neut-gray-violet);
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding-inline: 10vw;
+}
+
+.hero > .button {
+  margin: 1.5rem auto;
+}
+
+@media (max-width: 640px) {
+  .hero-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: 0;
+    padding-left: 1rem;
+    padding-block: 1rem;
+  }
+}
+
+/* TODO: add desktop styling */
+/* .hero-img {
+} */

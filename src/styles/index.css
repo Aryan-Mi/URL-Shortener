@@ -19,6 +19,11 @@
   /* BREAK-POINTS */
   --bp-mobile: 375px;
   --bp-desktop: 1440px;
+
+  /* BORDER-RADIUS */
+  --br-round: 2rem;
+  --br-square: 5px;
+  --br-round-square: 10px;
 }
 
 body {
@@ -26,4 +31,42 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: var(--font-w-regular);
+}
+
+input {
+  border: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+.button {
+  color: white;
+  font-weight: bold;
+  transition: opacity 150ms ease-in;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.btn-primary {
+  background-color: var(--clr-prim-cyan);
+}
+.btn-secondary {
+  background-color: var(--clr-prim-dark-violet);
+}
+.btn-round {
+  border-radius: var(--br-round);
+  padding: 0.75rem 2rem;
+}
+.btn-square {
+  border-radius: var(--br-square);
+  padding: 0.5rem 4rem;
 }

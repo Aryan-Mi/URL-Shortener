@@ -1,10 +1,11 @@
 // import React from 'react';
-import './styles/App.css'
+import '@/styles/App.css'
+import { Hero } from '@/components/layout'
 
 function App() {
   return (
     <>
-      <div>URL Shortener</div>
+      <Hero />
     </>
   )
 }
