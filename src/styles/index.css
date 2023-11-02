@@ -70,3 +70,15 @@ button {
   border-radius: var(--br-square);
   padding: 0.5rem 4rem;
 }
+
+h2 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}

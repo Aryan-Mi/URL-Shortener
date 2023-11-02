@@ -1,0 +1,13 @@
+.features {
+  background-color: #f0f1f6;
+  padding: 8rem 0 4rem;
+  display: grid;
+  place-content: center;
+}
+
+.features-desc {
+  font-size: 0.9rem;
+  text-align: center;
+  width: min(340px, 80vw);
+  color: var(--clr-neut-gray-violet);
+}

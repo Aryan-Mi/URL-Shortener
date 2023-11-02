@@ -1,5 +1,6 @@
 .hero {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero nav {
@@ -35,7 +36,7 @@
 }
 
 .hero > .button {
-  margin: 1.5rem auto;
+  margin: 1.5rem auto 0;
 }
 
 @media (max-width: 640px) {
