@@ -1,6 +1,6 @@
 // import React from 'react';
 import '@/styles/App.css'
-import { Hero, Features, CTABoost } from '@/components/layout'
+import { Hero, Features, CTABoost, Footer } from '@/components/layout'
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Hero />
       <Features />
       <CTABoost />
+      <Footer />
     </>
   )
 }

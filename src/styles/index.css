@@ -72,13 +72,22 @@ button {
 }
 
 h2 {
-  font-weight: bold;
   font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+h4 {
+  font-size: 1rem;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: bold;
   text-align: center;
 }
 
-h3 {
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-align: center;
+ul {
+  list-style: none;
 }
