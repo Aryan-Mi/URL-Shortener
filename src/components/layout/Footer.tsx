@@ -1,9 +1,9 @@
-import '@/styles/Footer.css'
-import logo from '@assets/images/logo-white.svg'
 import facebook from '@assets/images/icon-facebook.svg'
 import twitter from '@assets/images/icon-twitter.svg'
 import pinterest from '@assets/images/icon-pinterest.svg'
 import instagram from '@assets/images/icon-instagram.svg'
+import logo from '@assets/images/logo-white.svg'
+import '@/styles/Footer.css'
 
 export default function Footer() {
   return (

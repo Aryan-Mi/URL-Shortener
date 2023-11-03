@@ -1,4 +1,4 @@
-// import React from 'react'
+import { Fragment } from 'react'
 import brandIcon from '@assets/images/icon-brand-recognition.svg'
 import recordsIcon from '@assets/images/icon-detailed-records.svg'
 import customizeIcon from '@assets/images/icon-fully-customizable.svg'
@@ -8,10 +8,10 @@ export default function FeatureCards() {
   return (
     <div className="feature-cards-wrapper">
       {featuresData.map((item, index) => (
-        <>
-          <FeatureCard key={item.title} {...item} />
+        <Fragment key={item.title}>
+          <FeatureCard {...item} />
           {index < featuresData.length - 1 && <div className="card-line"></div>}
-        </>
+        </Fragment>
       ))}
     </div>
   )
