@@ -1,11 +1,20 @@
+.links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 50;
+  transform: translateY(calc(-9.25rem / 2)); /* Height of link input*/
+  gap: 1.5rem;
+}
+
 .link-input-wrapper {
-  margin: 0 auto;
   position: relative;
   z-index: 50;
-  transform: translateY(50%);
+  /* transform: translateY(-50%); */
   background-color: var(--clr-prim-dark-violet);
   width: min(80vw, 340px);
-  border-radius: 10px;
+  border-radius: var(--br-round-square);
   overflow: hidden;
   display: flex;
   flex-direction: column;

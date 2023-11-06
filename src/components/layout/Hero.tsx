@@ -25,7 +25,7 @@ function Hero() {
         links are performing
       </p>
       <button className="button btn-primary btn-round">Get Started</button>
-      <LinkInput />
+      {/* <LinkInput /> */}
     </section>
   )
 }

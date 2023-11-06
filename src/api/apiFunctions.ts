@@ -21,8 +21,7 @@ export async function shortenURL(longURL: string) {
   if (!response.ok || code !== 0) {
     throw new Error(errors[0])
   }
-  const shortURL = data.tiny_url
-  return shortURL
+  return { url: data.tiny_url, alias: data.alias }
 }
 
 function formatURL(url: string) {
