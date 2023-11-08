@@ -28,8 +28,9 @@
     padding-inline: 1rem;
     width: 100%;
     overflow: hidden;
-    text-overflow: ellipsis;
     text-wrap: nowrap;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 

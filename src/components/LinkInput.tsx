@@ -1,7 +1,5 @@
-// import { useState } from 'react'
 import '@/styles/LinkInput.css'
 import shortenImg from '@assets/images/bg-shorten-mobile.svg'
-// import { shortenURL } from '@/api/apiFunctions'
 import { useAPIState } from '@/api/useAPIState'
 import ShortLink from './ShortLink'
 

@@ -17,11 +17,7 @@ function ShortLink({ longLink, shortLink }: Props) {
         </a>
       </div>
       <div className="short-link">
-        <a
-          href={shortLink}
-          target="_blank"
-          // rel="noopener noreferrer"
-        >
+        <a href={shortLink} target="_blank">
           {shortLink}
         </a>
         <button
