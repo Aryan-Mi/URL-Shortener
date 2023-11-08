@@ -3,9 +3,13 @@ import isUrl from 'validator/lib/isURL'
 const TINY_URL_API = 'https://api.tinyurl.com/create'
 
 export async function shortenURL(longURL: string) {
+  if (longURL === '') {
+    throw new Error('Please add a link')
+  }
+
   const newURL = formatURL(longURL)
   if (!isURLValid(newURL)) {
-    throw new Error('Invalid URL Link.')
+    throw new Error('Invalid URL Link')
   }
 
   const response = await fetch(TINY_URL_API, {

@@ -11,16 +11,20 @@ function LinkInput() {
     <div className="links">
       <div className="link-input-wrapper">
         <img className="bg-link-input" src={shortenImg} />
-        <input
-          value={longURL}
-          onChange={(e) => setLongURL(e.target.value)}
-          type="url"
-          name="link-input"
-          id="link-input"
-          placeholder="Shorten a link here..."
-        />
+        <div>
+          <input
+            value={longURL}
+            onChange={(e) => setLongURL(e.target.value)}
+            type="url"
+            name="link-input"
+            id="link-input"
+            className={`link-input ${errorStatus && 'input-error-state'}`}
+            placeholder="Shorten a link here..."
+          />
+          {errorStatus && <p className="errorMessage">{error}</p>}
+        </div>
         <button onClick={handleURL} className="button btn-primary btn-square">
-          {errorStatus ? error : 'Shorten It!'}
+          Shorten It!
         </button>
       </div>
 

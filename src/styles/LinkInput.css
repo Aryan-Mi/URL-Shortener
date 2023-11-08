@@ -11,15 +11,12 @@
 .link-input-wrapper {
   position: relative;
   z-index: 50;
-  /* transform: translateY(-50%); */
   background-color: var(--clr-prim-dark-violet);
   width: min(80vw, 340px);
   border-radius: var(--br-round-square);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
   gap: 1rem;
   padding: 1.5rem 1rem;
 }
@@ -28,18 +25,37 @@
   z-index: 10;
 }
 
+.errorMessage {
+  color: var(--clr-sec-red, red);
+  font-style: italic;
+  font-size: 0.7rem;
+  margin-top: 4px;
+}
+
 .link-input-wrapper button {
   padding-inline: 0;
 }
 
-#link-input {
+.link-input {
   border-radius: var(--br-square);
   color: var(--clr-neut-dark-violet);
   font-size: 1rem;
   padding: 0.5rem;
+  width: 100%;
 
   &::placeholder {
     color: var(--clr-neut-gray-violet);
+  }
+}
+
+.input-error-state {
+  outline: 3px solid var(--clr-sec-red);
+  color: var(--clr-sec-red);
+  &::placeholder {
+    color: var(--clr-sec-red);
+  }
+  &:focus {
+    outline: 3px solid var(--clr-sec-red);
   }
 }
 
