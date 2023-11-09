@@ -16,10 +16,6 @@
   --font-w-regular: 500;
   --font-w-bold: 700;
 
-  /* BREAK-POINTS */
-  --bp-mobile: 375px;
-  --bp-desktop: 1440px;
-
   /* BORDER-RADIUS */
   --br-round: 2rem;
   --br-square: 5px;
