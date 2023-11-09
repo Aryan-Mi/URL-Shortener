@@ -55,9 +55,9 @@ button {
     opacity: 0.5;
   }
 }
-
 .btn-primary {
   background-color: var(--clr-prim-cyan);
+  font-weight: bold;
 }
 .btn-secondary {
   background-color: var(--clr-prim-dark-violet);
@@ -90,4 +90,9 @@ h4 {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
 }

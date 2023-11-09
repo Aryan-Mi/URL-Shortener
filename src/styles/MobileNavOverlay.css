@@ -1,0 +1,60 @@
+.mobile-menu {
+  position: fixed;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(70vw, 280px);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--br-round-square);
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: var(--clr-prim-dark-violet);
+  color: white;
+  transition: top linear 750ms, visibility ease-in 900ms, opacity ease-in 900ms;
+}
+
+.mobile-menu.visible {
+  visibility: visible;
+  opacity: 1;
+  top: 4.8rem;
+  transition: top linear 500ms;
+}
+
+.mobile-menu .nav-links {
+  text-align: center;
+  border-bottom: 1px solid #544a6d;
+  display: grid;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.mobile-menu .auth-links {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.log-in-btn {
+  color: currentColor;
+  background-color: transparent;
+}
+
+.mobile-menu .sign-up-btn {
+  align-self: stretch;
+  padding: 0.5rem 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile-menu {
+    display: none;
+  }
+}
