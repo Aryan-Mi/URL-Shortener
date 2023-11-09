@@ -1,6 +1,5 @@
-import '@/styles/LinkInput.css'
-import shortenImg from '@assets/images/bg-shorten-mobile.svg'
 import { useAPIState } from '@/api/useAPIState'
+import '@/styles/LinkInput.css'
 import ShortLink from './ShortLink'
 
 function LinkInput() {
@@ -10,8 +9,7 @@ function LinkInput() {
   return (
     <div className="links">
       <div className="link-input-wrapper">
-        <img className="bg-link-input" src={shortenImg} />
-        <div>
+        <div className="input-container">
           <input
             value={longURL}
             onChange={(e) => setLongURL(e.target.value)}

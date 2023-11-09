@@ -19,6 +19,9 @@
   flex-direction: column;
   gap: 1rem;
   padding: 1.5rem 1rem;
+  background-image: url('@assets/images/bg-shorten-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 .link-input-wrapper > * {
@@ -63,4 +66,54 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media only screen and (width >= 600px) {
+  .link-input-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 80vw;
+    padding: max(5%, 2rem) max(5%, 2rem);
+    background-image: url('@assets/images/bg-shorten-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .input-container {
+    flex: 5;
+    position: relative;
+  }
+
+  .link-input {
+    border-radius: var(--br-round-square);
+    padding-block: 0.8rem;
+    padding-left: 1.25rem;
+  }
+
+  .errorMessage {
+    position: absolute;
+    margin-top: 2%;
+    font-size: 0.8rem;
+  }
+
+  .link-input-wrapper button {
+    flex: 2;
+    padding-block: 0.8rem;
+    max-width: 10rem;
+    border-radius: var(--br-round-square);
+  }
+
+  .bg-link-input {
+    height: 123px;
+    object-fit: cover;
+    /* position: fixed; */
+    /* height: 100%; */
+    /* z-index: -10; */
+    /* inset: initial; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* height: 100%; */
+  }
 }

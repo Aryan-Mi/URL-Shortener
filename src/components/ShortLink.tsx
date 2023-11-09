@@ -23,7 +23,7 @@ function ShortLink({ longLink, shortLink }: Props) {
         <button
           onClick={handleCopy}
           className={`button btn-primary btn-square ${
-            copied && 'btn-secondary'
+            copied ? 'btn-secondary' : ''
           }`}
         >
           {copied ? 'Copied!' : 'Copy'}
