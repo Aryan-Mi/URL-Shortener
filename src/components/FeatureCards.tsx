@@ -1,30 +1,18 @@
-import { Fragment } from 'react'
+import '@/styles/FeatureCards.css'
 import brandIcon from '@assets/images/icon-brand-recognition.svg'
 import recordsIcon from '@assets/images/icon-detailed-records.svg'
 import customizeIcon from '@assets/images/icon-fully-customizable.svg'
-import '@/styles/FeatureCards.css'
+import { Fragment } from 'react'
 
 export default function FeatureCards() {
   return (
     <div className="feature-cards-wrapper">
       {featuresData.map((item, index) => (
         <Fragment key={item.title}>
-          <FeatureCard {...item} />
+          <FeatureCard index={index} {...item} />
           {index < featuresData.length - 1 && <div className="card-line"></div>}
         </Fragment>
       ))}
-    </div>
-  )
-}
-
-function FeatureCard({ title, info, icon }: FeatureCardProps) {
-  return (
-    <div className="feature-card">
-      <div className="feature-img-wrapper">
-        <img src={icon.src} alt={icon.alt} />
-      </div>
-      <h3>{title}</h3>
-      <p className="feature-info">{info}</p>
     </div>
   )
 }
@@ -33,6 +21,18 @@ interface FeatureCardProps {
   title: string
   info: string
   icon: { src: string; alt: string }
+  index: number
+}
+function FeatureCard({ title, info, icon, index }: FeatureCardProps) {
+  return (
+    <div data-card-index={index} className="feature-card">
+      <div className="feature-img-wrapper">
+        <img src={icon.src} alt={icon.alt} />
+      </div>
+      <h3>{title}</h3>
+      <p className="feature-info">{info}</p>
+    </div>
+  )
 }
 
 const featuresData = [

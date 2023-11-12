@@ -40,3 +40,27 @@
   width: 10px;
   height: 6rem;
 }
+
+@media only screen and (width >= 900px) {
+  .feature-cards-wrapper {
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
+  .card-line {
+    width: min(3vw, 3rem);
+    height: 10px;
+  }
+  .feature-img-wrapper {
+    left: 2rem;
+  }
+  .feature-card {
+    width: clamp(200px, 30vw, 330px);
+    aspect-ratio: 1.35;
+  }
+  .feature-card:nth-child(3) {
+    transform: translateY(10%);
+  }
+  .feature-card:nth-child(5) {
+    transform: translateY(20%);
+  }
+}
