@@ -1,10 +1,16 @@
 .cta {
+  --bg-mobile: url('@assets/images/bg-boost-mobile.svg');
+  --bg-desktop: url('@assets/images/bg-boost-desktop.svg');
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   background-color: var(--clr-prim-dark-violet);
+  background-image: var(--bg-mobile);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   aspect-ratio: 1.35;
 }
@@ -23,4 +29,17 @@
   object-fit: cover;
   position: absolute;
   z-index: 0;
+}
+
+@media only screen and (width >= 600px) {
+  .cta {
+    background-image: var(--bg-desktop);
+    aspect-ratio: unset;
+    background-size: cover;
+    padding: 6rem 0;
+  }
+
+  .cta h2 {
+    font-size: clamp(2rem, 2vw, 5rem);
+  }
 }

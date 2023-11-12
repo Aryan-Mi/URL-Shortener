@@ -73,7 +73,7 @@
     display: flex;
     position: relative;
     flex-direction: row;
-    width: 80vw;
+    width: 70vw;
     padding: max(5%, 2rem) max(5%, 2rem);
     background-image: url('@assets/images/bg-shorten-desktop.svg');
     background-repeat: no-repeat;
@@ -107,13 +107,5 @@
   .bg-link-input {
     height: 123px;
     object-fit: cover;
-    /* position: fixed; */
-    /* height: 100%; */
-    /* z-index: -10; */
-    /* inset: initial; */
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
-    /* height: 100%; */
   }
 }
