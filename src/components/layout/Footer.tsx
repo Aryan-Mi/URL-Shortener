@@ -10,25 +10,31 @@ export default function Footer() {
     <section className="footer">
       <img className="logo footer-logo" src={logo} alt="Website logo" />
 
-      <h4>Features</h4>
-      <ul className="footer-links features-list">
-        <li>Link Shortening</li>
-        <li>Branded Links</li>
-        <li>Analytics</li>
-      </ul>
-      <h4>Resources</h4>
-      <ul className="footer-links features-list">
-        <li>Blog</li>
-        <li>Developers</li>
-        <li>Support</li>
-      </ul>
-      <h4>Company</h4>
-      <ul className="footer-links features-list">
-        <li>About</li>
-        <li>Our Team</li>
-        <li>Careers</li>
-        <li>Contact</li>
-      </ul>
+      <div className="footer-section">
+        <h4>Features</h4>
+        <ul className="footer-links features-list">
+          <li>Link Shortening</li>
+          <li>Branded Links</li>
+          <li>Analytics</li>
+        </ul>
+      </div>
+      <div className="footer-section">
+        <h4>Resources</h4>
+        <ul className="footer-links features-list">
+          <li>Blog</li>
+          <li>Developers</li>
+          <li>Support</li>
+        </ul>
+      </div>
+      <div className="footer-section">
+        <h4>Company</h4>
+        <ul className="footer-links features-list">
+          <li>About</li>
+          <li>Our Team</li>
+          <li>Careers</li>
+          <li>Contact</li>
+        </ul>
+      </div>
 
       <ul className="social-media-links">
         <li>
