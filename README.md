@@ -1,27 +1,27 @@
-# React + TypeScript + Vite
+# URL shortening API landing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is based on the [Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G) challenge and the corresponding design.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The [**TinyURL API**](https://tinyurl.com/app/dev) has been used to create shortened URLs, which get displayed on the website, and saved to the local storage for data persistance.
 
-## Expanding the ESLint configuration
+**_\*NOTE:_** The project utilizes the free-tier version of the TinyURL API, which has a limit of 600 links/month.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<!-- [^1]: **_Note:_** The project utilizes the free-tier version of the TinyURL API, which has a limit of 600 links/month. -->
 
-- Configure the top-level `parserOptions` property like this:
+### Features
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Validate URL
+- Shorten any valid URL
+- Display previous shortened links, even after refreshing the browser
+- Copy shortened link to clipboard
+- Input handling and displaying an error message if something goes wrong with the link input
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Tech Stack
+
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
